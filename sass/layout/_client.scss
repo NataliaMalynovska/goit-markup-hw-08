@@ -1,0 +1,32 @@
+.section-client {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.client {
+  @extend %flex-center;
+}
+
+.client__item + .client__item {
+  margin-left: 30px;
+}
+.client__link {
+  width: 170px;
+  height: 92px;
+
+  color: var(--link-color);
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  @extend %flex-center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    border: 1px solid var(--button-color);
+    color: var(--button-color);
+  }
+}
+
+.client__logo {
+  fill: currentColor;
+}
