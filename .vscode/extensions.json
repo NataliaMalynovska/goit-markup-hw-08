@@ -1,5 +1,3 @@
 {
-    "recommendations": [
-        "zhuangtongfa.material-theme"
-    ]
+  "recommendations": ["zhuangtongfa.material-theme", "ritwickdey.LiveServer"]
 }
