@@ -14,7 +14,7 @@
   </head>
 <body>
 <!--Шапка сайта-->
-    <!-- <header class="header">
+    <header class="header">
         <div class="container">
             <div class="header-groups">
                 <div class="logo-box--top">
@@ -65,12 +65,12 @@
             </div>
         </div>
     </header>
-    <main> -->
+    <main>
 <!--Герой-->
     <section class="section-hero">
             <div class="container">
                 <h1 class="section-hero__title">Эффективные решения <br> для вашего бизнеса</h1>
-                <button class="button-submit--center " type="button" data-modal-open>Заказать услугу</button>  
+                <button class="button-submit" type="button" data-modal-open>Заказать услугу</button>  
             </div>    
     </section>           
 <!--Наши особенности-->
@@ -118,7 +118,7 @@
         </div>           
     </section>
 <!--Чем мы занимаемся-->
-    <!-- <section class="section-work">
+    <section class="section-work">
         <div class="container">
         <h2 class="section-title">Чем мы занимаемся</h2>
         <ul class="works">
@@ -145,7 +145,7 @@
         </div>
     </section>
 <!--Наша команда-->
-    <!-- <section class="section-team"> 
+    <section class="section-team"> 
             <div class="container">
             <h2 class="section-title ">Наша команда</h2>            
             <ul class="team">
@@ -307,9 +307,9 @@
             </li>
             </ul>   
             </div>
-    </section>  --> -->
+    </section>
 <!--Постоянные клиенты-->
-    <!-- <section class="section-client">
+    <section class="section-client">
             <div class="container">
                 <h2 class="section-title">Постоянные клиенты</h2>
                 <ul class="client">
@@ -358,61 +358,64 @@
                 </ul>
             </div>
     </section>
-    </main>    --> -->
+    </main> 
 <!--Футер-->   
-    <!-- <footer class="footer ">
+    <footer class="footer ">
     <div class="footer-container container">
-        <div class="contact-logo">
-           <div class="logo-box--bottom">
+        <div class="footer-container--tablet">
+            <div class="contact-logo">
+            <div class="logo-box--bottom">
                <a class="logo" href="./index.html">Web<span class="logo--light">Studio</span> </a>
-           </div>
-        <address class="contact-logo__adddress">
+            </div>
+            <address class="contact-logo__adddress">
             <ul class="contact">
                 <li class="contact__item"><a class="contact__adr" href="https://goo.gl/maps/tiUqrvg8PTp8PGdr9" target="_blank">г. Киев, пр-т Леси Украинки, 26  </a></li>
                 <li class="contact__item"><a class="contact__mail-tel" href="mailto:info@example.com ">info@devstudio.com</a></li>
-                <li class="contact__item"><a class="contact__mail-tel" href="tel:+380991111111">tel:+38 099 111 11 11</a></li>
+                <li class="contact__item"><a class="contact__mail-tel" href="tel:+380991111111">+38 099 111 11 11</a></li>
             </ul>
-        </address> 
-        </div>
-        <div class="footer-connect" >
-        <p class="footer-connect__title">Присоединяйтесь</p>
-        <ul class="social-set--footer">
-            <li class="social-set__item">                   
+            </address> 
+            </div>
+            <div class="footer-connect" >
+            <p class="footer-connect__title">Присоединяйтесь</p>
+            <ul class="social-set--footer">
+                <li class="social-set__item">                   
                 <a href="" class="social-set__link--dark">
                     <svg class="social-set__icon--dark" width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram"></use>
                     </svg>
                 </a>
-            </li>
-            <li class="social-set__item">
+                </li>
+                <li class="social-set__item">
                 <a href="" class="social-set__link--dark">
                 <svg class="social-set__icon--dark" width="20" height="20">
                     <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
-            </a>
-            </li>
-            <li class="social-set__item">
+                </a>
+                </li>
+                <li class="social-set__item">
                 <a href="" class="social-set__link--dark">
                     <svg class="social-set__icon--dark" width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook"></use>
                     </svg>
-                </a>
-            </li>
-            <li class="social-set__item">
+                    </a>
+                </li>
+                <li class="social-set__item">
                 <a href="" class="social-set__link--dark">
                     <svg class="social-set__icon--dark" width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                     </svg>
-                </a>
-            </li>   
+                    </a>
+                </li>   
             </ul>
-        </div > 
+            </div >
+        </div>
+        
         
         <form class="footer-form">
         <p class="footer-form__title">Подпишитесь на рассылку</p>     
         <div class="footer-form__box-input">
                 <input class="footer-form__input" type="email" name="email" placeholder="E-mail">
-                <button class="button-submit" type="submit" >Подписаться<svg class="footer-icon" width="24" height="24">
+                <button class="button-submit--left" type="submit" >Подписаться<svg class="footer-icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-icon-send"></use>
                 </svg></button>     
         </div>
@@ -467,7 +470,7 @@
                         <input type="checkbox" name="accord" id="accord" class="data-form__checkbox visually-hidden">
                         <label for="accord" class="data-form__checkbox-label">    Соглашаюсь с рассылкой и принимаю   <a href="" class="data-form__checkbox-link"> Условия договора</a></label>  
                     </li>            
-                     <li class="data-form__item"><button class="button-submit--center " type="submit" >Отправить</button>
+                     <li class="data-form__item"><button class="button-submit" type="submit" >Отправить</button>
                     </li>
                 </ul>
             </form>

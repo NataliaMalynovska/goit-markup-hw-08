@@ -7,6 +7,10 @@
 }
 .social-set--footer {
   display: flex;
+  justify-content: center;
+  @media screen and (min-width: 1200px) {
+    justify-content: start;
+  }
 }
 .social-set__link {
   width: 44px;
