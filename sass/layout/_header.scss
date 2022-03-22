@@ -14,13 +14,13 @@
   display: none;
   @media screen and (min-width: 768px) {
     display: block;
+    font-weight: 500;
+    letter-spacing: 0.02em;
     margin-right: 84px;
   }
 
   @media screen and (min-width: 1200px) {
     margin-right: 305px;
-    font-weight: 500;
-    letter-spacing: 0.02em;
   }
 }
 
@@ -106,6 +106,7 @@
 
 .current {
   color: var(--button-color);
+  position: relative;
   @media screen and (min-width: 768px) {
     &::after {
       position: absolute;
@@ -120,8 +121,10 @@
     }
   }
 }
-.menu-button {
+.menu-button__open,
+.menu-button__close {
   display: block;
+  margin-left: auto;
   padding: 0;
   border: 0;
   background-color: transparent;
@@ -138,26 +141,38 @@
     display: none;
   }
 }
-.menu-button .icon-close {
-  display: none;
+.menu-button__close {
+  margin-left: auto;
+  margin-bottom: 8px;
 }
-.menu-button.is-open .icon-close {
-  display: block;
-}
-.menu-button.is-open .icon-menu {
-  display: none;
-}
+// .menu-button .icon-close {
+//   display: none;
+// }
+// .menu-button.is-open .icon-close {
+//   display: block;
+// }
+// .menu-button.is-open .icon-menu {
+//   display: none;
+// }
 
 .mobile-menu {
-  position: absolute;
-  top: 100%;
-  left: 0%;
-  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
 
   background-color: var(--main-background);
-  padding: 0px 40px 48px 40px;
-  &.is-open {
-    display: block;
+  padding: 21px 21px 48px 40px;
+
+  .container {
+    height: 100%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   @media screen and (min-width: 768px) {
@@ -194,7 +209,6 @@
 }
 .tel {
   font-size: 34px;
-
   color: var(--button-color);
 }
 .mail {

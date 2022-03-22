@@ -1,13 +1,16 @@
 (() => {
-    const menuBtnRef = document.querySelector("[data-menu-button]");
-    const MobilemenuRef = document.querySelector("[data-menu]");
+  const refs = {
+    openMenuBtn: document.querySelector(".menu-button__open"),
+    closeMenuBtn: document.querySelector(".menu-button__close"),
+    menu: document.querySelector(".mobile-menu"),
+  };
 
-    menuBtnRef.addEventListener("click", () => {
-        const expanded =
-            menuBtnRef.getAttribute("aria-expanded") === "true" || false;
-        
-        menuBtnRef.classList.toggle("is-open");
-        menuBtnRef.setAttribute("aria-expanded", !expanded);
-        MobilemenuRef.classList.toggle("is-open");
-    });
+  refs.openMenuBtn.addEventListener("click", toggleMenu);
+  refs.closeMenuBtn.addEventListener("click", toggleMenu);
+
+  function toggleMenu() {
+    refs.menu.classList.toggle("is-hidden");
+  }
 })();
+
+
