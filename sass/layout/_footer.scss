@@ -1,9 +1,12 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  min-width: 480px;
+  width: 100%;
 
   background: var(--background-dark);
+  // @media screen and (min-width: 1200px) {
+  //   width: 480px;
+  // }
 }
 .footer-container {
   @media screen and (min-width: 1200px) {
@@ -22,7 +25,6 @@
 }
 
 .contact-logo {
-  margin-bottom: 60px;
   text-align: center;
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
@@ -67,11 +69,19 @@
     color: var(--button-color);
   }
 }
+.footer-container--tablet {
+  margin-right: auto;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+}
 .footer-connect {
-  margin-bottom: 60px;
   text-align: center;
+  @media screen and (max-width: 768px) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
   @media screen and (min-width: 1200px) {
-    margin-right: 93px;
     text-align: start;
   }
 }

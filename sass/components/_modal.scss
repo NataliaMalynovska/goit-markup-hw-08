@@ -15,7 +15,7 @@
 .modal {
   position: absolute;
   padding: 40px;
-  width: 450px;
+  width: 100%;
   height: 609px;
   top: 50%;
   left: 50%;
@@ -30,7 +30,9 @@
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(-1, 0.01);
   }
-
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
   @media screen and (min-width: 1200px) {
     width: 528px;
     min-height: 581px;
@@ -84,7 +86,7 @@
   color: var(--primary-text-color);
 }
 .data-form__input {
-  padding-left: 4px;
+  padding-left: 42px;
 
   width: 100%;
   height: 40px;
@@ -164,18 +166,16 @@
     font-size: 14px;
     line-height: 1.71;
   }
-}
 
-.data-form__checkbox-label::before {
-  content: " ";
-  // display: inline-block;
-  width: 16px;
-  height: 15px;
-  display: block;
-  margin-right: 10px;
-  border: 1px solid var(--background-dark);
-  border-radius: 2px;
-
+  &::before {
+    content: " ";
+    width: 16px;
+    height: 15px;
+    display: block;
+    margin-right: 10px;
+    border: 1px solid var(--background-dark);
+    border-radius: 2px;
+  }
   .data-form__checkbox:checked + &::before {
     background-image: url(../images/icon-check.svg);
     border: none;
