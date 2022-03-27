@@ -29,10 +29,10 @@
       url(../images/img-fon-mob-2.jpg);
   }
   @media screen and (min-width: 480px) {
-    width: 480px;
+    // width: 480px;
   }
   @media screen and (min-width: 768px) {
-    width: 768px;
+    // width: 768px;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -49,12 +49,10 @@
     }
   }
   @media screen and (min-width: 1200px) {
-    // margin-left: 0;
-    // margin-right: 0;
     padding-top: 200px;
     padding-bottom: 200px;
 
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
