@@ -611,24 +611,32 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-bottom: -30px;
+    margin-top: -30px;
     margin-left: -30px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .features {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
   }
 }
 
 .features__item {
-  margin-bottom: 30px;
+  margin-top: 30px;
 }
 @media screen and (min-width: 768px) {
   .features__item {
-    text-align: start;
+    -ms-flex-preferred-size: calc(50% - 30px);
+        flex-basis: calc(50% - 30px);
     margin-left: 30px;
+    text-align: start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__item {
+    -ms-flex-preferred-size: calc(25% - 30px);
+        flex-basis: calc(25% - 30px);
+    margin-top: 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .features__item:first-child {
+    margin-top: 0;
   }
 }
 
@@ -665,11 +673,11 @@ body {
 @media screen and (min-width: 768px) {
   .features__title {
     width: 354px;
+    text-align: start;
   }
 }
 @media screen and (min-width: 1200px) {
   .features__title {
-    margin-top: 30px;
     width: 270px;
   }
 }
@@ -1218,6 +1226,11 @@ body {
     text-align: start;
   }
 }
+@media screen and (max-width: 768px) {
+  .contact-logo {
+    margin-bottom: 60px;
+  }
+}
 
 .contact__item {
   margin-top: 8px;
@@ -1259,7 +1272,7 @@ body {
 .footer-container--tablet {
   margin-right: auto;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .footer-container--tablet {
     margin-bottom: 60px;
   }
@@ -1267,12 +1280,6 @@ body {
 
 .footer-connect {
   text-align: center;
-}
-@media screen and (max-width: 768px) {
-  .footer-connect {
-    margin-top: 60px;
-    margin-bottom: 60px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .footer-connect {
@@ -1618,8 +1625,7 @@ body {
   border: none;
 }
 .data-form__checkbox:focus + .data-form__checkbox-label::before {
-  background-image: url(../images/icon-check.svg);
-  border: none;
+  border: 1px solid var(--button-color);
 }
 .data-form__checkbox:hover + .data-form__checkbox-label::before {
   border: 1px solid var(--button-color);

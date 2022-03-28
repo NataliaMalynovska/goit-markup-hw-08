@@ -181,8 +181,7 @@
     border: none;
   }
   .data-form__checkbox:focus + &::before {
-    background-image: url(../images/icon-check.svg);
-    border: none;
+    border: 1px solid var(--button-color);
   }
   .data-form__checkbox:hover + &::before {
     border: 1px solid var(--button-color);

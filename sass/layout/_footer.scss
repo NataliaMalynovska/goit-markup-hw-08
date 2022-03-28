@@ -31,6 +31,9 @@
     margin-bottom: 0px;
     text-align: start;
   }
+  @media screen and (max-width: 768px) {
+    margin-bottom: 60px;
+  }
 }
 
 .contact__item {
@@ -71,16 +74,13 @@
 }
 .footer-container--tablet {
   margin-right: auto;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     margin-bottom: 60px;
   }
 }
 .footer-connect {
   text-align: center;
-  @media screen and (max-width: 768px) {
-    margin-top: 60px;
-    margin-bottom: 60px;
-  }
+
   @media screen and (min-width: 1200px) {
     text-align: start;
   }
